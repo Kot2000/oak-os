@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESKA OS</title>
+
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0;
+            background-color: #121224
+        }
+
+        a {
+            color: #484896;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        * {
+            color: #34344a;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+
+        .content-container {
+            scale: 0;
+            position: absolute;
+            top: 1.5em;
+        }
+
+        #nav-bar {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #nav-bar li {
+            display: inline;
+            float: left;
+        }
+
+        #nav-bar a {
+            display: block;
+            padding: 8px;
+        }
+
+        #main-content {
+            margin: 5px;
+            width: 100%;
+            height: calc(100% - 2.25em);
+        }
+    </style>
+    <ul id="nav-bar">
+        <li><a href="#">H0ME</a></li>
+        <li><a href="#downloads">D0WNL0ADS</a></li>
+    </ul>
+    <div id="main-content"> 
+        <div class="content-container" id="err404">
+            <span>404</span><br><span>PAGE NOT EXIST</span>
+        </div>
+        <div class="content-container" id="home">
+
+        </div>
+        <div class="content-container" id="downloads">
+            <br><br>
+            <a href="./files.javascript/web-0.001/web.html">WEB VERSION</a>
+        </div>
+    </div>    
+</body>
+</html>

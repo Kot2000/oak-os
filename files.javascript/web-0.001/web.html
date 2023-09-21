@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple JavaScript OS</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <script src="./javascript/browser.js" defer></script>
+  <script src="./javascript/desktop.js" defer></script>
+</head>
+<body>
+  <!-- Taskbar -->
+  <div class="taskbar">
+    <div id="taskbar-icons">
+      <!-- Settings button -->
+    </div>
+  </div>
+
+  <div class="desktop">
+    <div id="desktop-icons" style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;align-content: flex-start;">
+      <div class="desktop-icon" data-open="#settings-window">
+        <img class="icon" src="/files.javascript/public/images/os-default-icons/computer.png"></img>
+        <div class="shortcut-icon">↗</div>
+      </div>
+      <div class="desktop-icon" data-open="#browser-window">
+        <img class="icon" src="/files.javascript/public/images/os-default-icons/internet.png"></img>
+        <div class="shortcut-icon">↗</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create a Window -->
+  <div class="window" id="window1" style="display: none;" data-minimalized="1">
+    <div class="window-title">
+      Window 1
+      <div class="window-buttons">
+        <div class="window-button" id="minimize">-</div>
+        <div class="window-button" id="maximize">□</div>
+        <div class="window-button" id="close">×</div>
+      </div>
+    </div>
+    <div class="window-content">
+      This is a sample window.
+    </div>
+    <!-- Resize handles -->
+  </div>
+
+  <!-- Settings Window (Initially Hidden) -->
+  <div class="window" id="settings-window" style="display: none;" data-minimalized="1">
+    <div class="window-title">
+      Settings
+      <div class="window-buttons">
+        <div class="window-button" id="minimize">-</div>
+        <div class="window-button" id="maximize">□</div>
+        <div class="window-button" id="close">×</div>
+      </div>
+    </div>
+    <div class="window-content">
+      Here are the OS settings.
+    </div>
+  </div>
+
+  <div class="window" id="browser-window" style="display: none;" data-minimalized="1">
+    <div class="window-title">
+      Deska Browser
+      <div class="window-buttons">
+        <div class="window-button" id="browser-home">⌂</div>
+        <div class="window-button-gap">⠀</div>
+        <div class="window-button" id="minimize">-</div>
+        <div class="window-button" id="maximize">□</div>
+        <div class="window-button" id="close">×</div>
+      </div>
+    </div>
+    <div class="window-content">
+      <iframe id="myFrame" allowtransparency="true" frameborder="0" allowfullscreen style="overflow: auto;width: 100%;height: calc(100% - 5px);"></iframe>
+    </div>
+  </div>
+</body>
+</html>

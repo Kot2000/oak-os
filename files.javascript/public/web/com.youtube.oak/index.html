@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe width="320" height="140" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br><input type="text" placeholder="Watch Id">
+    <div class="submit" style="background-color: gray; padding: 5; width: 100px; height: 25px;" selectable="false" onclick="youtubeplay()">submit</div>
+    <script>
+        const youtubeplay = () => {
+            document.querySelector("iframe").src = 'https://www.youtube.com/embed/' + document.querySelector("input").value
+        };
+    </script>
+</body>
+</html>
